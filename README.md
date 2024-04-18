@@ -29,7 +29,7 @@ Dataset downloading links:
 
 - [PubLayNet](https://github.com/ibm-aur-nlp/PubLayNet)
 
-Dataset converting code can be found 
+Dataset converting code and dataset samples will be released soon.
 
 ## Train and Inference Steps
 1. Install the repository (we recommend to use [Anaconda](https://www.anaconda.com/) for installation.)

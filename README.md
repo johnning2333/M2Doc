@@ -24,7 +24,7 @@ cd M2Doc
 pip install -v -e .
 ```
 
-2. dataset path
+2. dataset format
 <!-- ```
 datasets
 |_ totaltext

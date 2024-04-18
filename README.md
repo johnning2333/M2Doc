@@ -6,6 +6,14 @@ This is the pytorch implementation of Paper: M2Doc: A Multi-Modal Fusion Approac
 
 <img src="demo/m2doc.png" width="100%">
 
+
+## 🚧 TODO List
+- [x] Add training script and inference script for DINO_M2Doc.
+- [ ] Add training script and inference script for other detectors.
+- [ ] Add the data format samples for M2Doc.
+- [ ] Add the dataset converting scripts.
+- [ ] Release the Model-Zoo of M2Doc on DocLayNet.
+
 ## Installation
 - Python=3.8.0
 - CUDA 10.2
@@ -13,7 +21,18 @@ This is the pytorch implementation of Paper: M2Doc: A Multi-Modal Fusion Approac
 - MMDetection
 <!-- - OpenCV for visualization -->
 
-## Steps
+## Dataset Prepare
+Dataset downloading links: 
+
+- [DocLayNet](https://github.com/DS4SD/DocLayNet)
+
+- [M6Doc](https://github.com/HCIILAB/M6Doc)
+
+- [PubLayNet](https://github.com/ibm-aur-nlp/PubLayNet)
+
+Dataset converting code can be found 
+
+## Train and Inference Steps
 1. Install the repository (we recommend to use [Anaconda](https://www.anaconda.com/) for installation.)
 ```
 conda create -n m2doc python=3.8 -y
@@ -24,11 +43,6 @@ git clone https://github.com/johnning2333/M2Doc.git
 cd M2Doc/mmdetection
 pip install -v -e .
 ```
-
-2. dataset format
-
-Dataset downloading links
-
 
 <!-- ```
 datasets
@@ -44,31 +58,25 @@ datasets
 .......
 ``` -->
 
-1. Train
+2. Train
 ```
 # for multi-gpu training
 bash tools/dist_train.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py 8
 ```
 
-1. Inference
+3. Inference
 ```
 # for multi-gpu inference
 bash tools/dist_test.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py work_dirs/dino-4scale_w_m2doc_r50_8xb2-12e_doclaynet/epoch_12.pth 8
-
 ```
 <!-- ## Example results:
 
 <img src="demo/results.png" width="100%"> -->
 
-
-## 🚧 TODO List
-- [x] Add training script and inference script for M2Doc.
-- [ ] Add the data format samples for M2Doc.
-- [ ] Add the dataset converting scripts.
-- [ ] Release the Model-Zoo of M2Doc on DocLayNet.
-
 ## Acknowlegement
-[MMDetection](https://github.com/aim-uofa/AdelaiDet), [DINO](https://github.com/IDEA-Research/DINO), [VSR](https://github.com/hikopensource/DAVAR-Lab-OCR)
+[MMDetection](https://github.com/aim-uofa/AdelaiDet)
+[DINO](https://github.com/IDEA-Research/DINO)
+[VSR](https://github.com/hikopensource/DAVAR-Lab-OCR)
 
 ## Citation
 

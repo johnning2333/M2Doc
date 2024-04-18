@@ -1,8 +1,7 @@
 
-# M2Doc
+# [AAAI2024] M2Doc: A Multi-Modal Fusion Approach for Document Layout Analysis
 
-
-This is the pytorch implementation of Paper: M2Doc: A Multi-Modal Fusion Approach for Document Layout Analysis(AAAI 2024). The paper is available at [this link](https://ojs.aaai.org/index.php/AAAI/article/view/28552/29073).
+The paper is available at [this link](https://ojs.aaai.org/index.php/AAAI/article/view/28552/29073).
 
 <img src="demo/m2doc.png" width="100%">
 

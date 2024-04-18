@@ -174,10 +174,10 @@ train_dataloader = dict(
         type='DoclayNetDataset',
         metainfo=dict(classes=classes),
         ann_file=
-        '/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/COCO/train.json',
-        img_prefix = '/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/core/vsr/',
-        ann_prefix = '/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/core/vsr/Annos/',
-        data_prefix = dict(img='/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/core/PNG'),
+        'data/doc/doclaynet/COCO/train.json',
+        img_prefix = 'data/doc/doclaynet/core/vsr/',
+        ann_prefix = 'data/doc/doclaynet/core/vsr/Annos/',
+        data_prefix = dict(img='data/doc/doclaynet/core/PNG'),
         filter_cfg=dict(filter_empty_gt=False),
         pipeline=train_pipeline,
         ))
@@ -191,10 +191,10 @@ val_dataloader = dict(
         type='DoclayNetDataset',
         metainfo=dict(classes=classes),
         ann_file=
-        '/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/COCO/test.json',
-        img_prefix = '/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/core/vsr/',
-        ann_prefix = '/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/core/vsr/Annos/',
-        data_prefix = dict(img='/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/core/PNG'),
+        'data/doc/doclaynet/COCO/test.json',
+        img_prefix = 'data/doc/doclaynet/core/vsr/',
+        ann_prefix = 'data/doc/doclaynet/core/vsr/Annos/',
+        data_prefix = dict(img='data/doc/doclaynet/core/PNG'),
         filter_cfg=dict(filter_empty_gt=False),
         pipeline=test_pipeline,
         ))
@@ -208,10 +208,10 @@ test_dataloader = dict(
         type='DoclayNetDataset',
         metainfo=dict(classes=classes),
         ann_file=
-        '/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/core/COCO/test.json',
-        img_prefix = '/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/core/vsr/',
-        ann_prefix = '/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/core/vsr/Annos/',
-        data_prefix = dict(img='/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/core/PNG'),
+        'data/doc/doclaynet/core/COCO/test.json',
+        img_prefix = 'data/doc/doclaynet/core/vsr/',
+        ann_prefix = 'data/doc/doclaynet/core/vsr/Annos/',
+        data_prefix = dict(img='data/doc/doclaynet/core/PNG'),
         filter_cfg=dict(filter_empty_gt=False),
         pipeline=test_pipeline,
         ))
@@ -219,7 +219,7 @@ test_dataloader = dict(
 val_evaluator = dict(
     type='CocoMetric',
     ann_file=
-    '/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/core/COCO/test.json',
+    'data/doc/doclaynet/core/COCO/test.json',
     metric=['bbox'],
     format_only=False,
     classwise=True,
@@ -227,7 +227,7 @@ val_evaluator = dict(
 test_evaluator = dict(
     type='CocoMetric',
     ann_file=
-    '/apsarapangu/disk3/chonghuan.zn/data/doc/doclaynet/core/COCO/test.json',
+    'data/doc/doclaynet/core/COCO/test.json',
     metric=['bbox'],
     format_only=False,
     classwise=True,

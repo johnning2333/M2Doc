@@ -40,6 +40,10 @@ datasets
 ``` -->
 
 3. Train
+```
+# for multi-gpu training
+bash tools/dist_train.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py 8
+```
 
 4. Inference
 

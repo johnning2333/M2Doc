@@ -26,6 +26,7 @@ pip install -v -e .
 ```
 
 2. dataset format
+Dataset downloading links
 <!-- ```
 datasets
 |_ totaltext
@@ -40,13 +41,13 @@ datasets
 .......
 ``` -->
 
-3. Train
+1. Train
 ```
 # for multi-gpu training
 bash tools/dist_train.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py 8
 ```
 
-4. Inference
+1. Inference
 ```
 # for multi-gpu inference
 bash tools/dist_test.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py work_dirs/dino-4scale_w_m2doc_r50_8xb2-12e_doclaynet/epoch_12.pth 8

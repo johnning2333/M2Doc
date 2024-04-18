@@ -8,6 +8,7 @@ This is the pytorch implementation of Paper: M2Doc: A Multi-Modal Fusion Approac
 
 ## Installation
 - Python=3.8.0
+- CUDA 10.2
 - transformers
 - MMDetection
 <!-- - OpenCV for visualization -->
@@ -20,7 +21,7 @@ conda activate m2doc
 conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 cudatoolkit=10.2 -c pytorch
 pip install transformers
 git clone https://github.com/johnning2333/M2Doc.git
-cd M2Doc
+cd M2Doc/mmdetection
 pip install -v -e .
 ```
 
@@ -46,10 +47,21 @@ bash tools/dist_train.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.
 ```
 
 4. Inference
+```
+# for multi-gpu inference
+bash tools/dist_test.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py work_dirs/dino-4scale_w_m2doc_r50_8xb2-12e_doclaynet/epoch_12.pth 8
 
+```
 <!-- ## Example results:
 
 <img src="demo/results.png" width="100%"> -->
+
+
+## 🚧 TODO List
+- [x] Add training script and inference script for M2Doc.
+- [ ] Add the data format samples for M2Doc.
+- [ ] Add the dataset converting scripts.
+- [ ] Release the Model-Zoo of M2Doc on DocLayNet.
 
 ## Acknowlegement
 [MMDetection](https://github.com/aim-uofa/AdelaiDet), [DINO](https://github.com/IDEA-Research/DINO), [VSR](https://github.com/hikopensource/DAVAR-Lab-OCR)

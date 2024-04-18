@@ -291,4 +291,4 @@ log_processor = dict(type='LogProcessor', window_size=50, by_epoch=True)
 log_level = 'INFO'
 load_from = 'https://download.openmmlab.com/mmdetection/v3.0/dino/dino-4scale_r50_8xb2-12e_coco/dino-4scale_r50_8xb2-12e_coco_20221202_182705-55b2bba2.pth'
 
-work_dir = '/work_dirs/dino-4scale_w_m2doc_r50_8xb2-12e_doclaynet'
+work_dir = 'work_dirs/dino-4scale_w_m2doc_r50_8xb2-12e_doclaynet'

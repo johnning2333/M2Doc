@@ -212,14 +212,14 @@ class DinoTransformerDecoderWithLateFusion(DeformableDetrTransformerDecoder):
 @MODELS.register_module()
 class DINO_w_M2Doc(DINO):
 
-    def __init__(self, Grid_layers :OptConfigType = None,
+    def __init__(self, grid_layers :OptConfigType = None,
                  **kwargs) -> None:
 
         super().__init__(**kwargs)
         #sentence grid head
-        if Grid_layers is not None:
+        if grid_layers is not None:
             # self.grid_head = MODELS.build(sentence_head)
-            self.grid_head = GridLayers(**Grid_layers)
+            self.grid_head = GridLayers(**grid_layers)
 
     def _init_layers(self) -> None:
         """Initialize layers except for backbone, neck and bbox_head."""

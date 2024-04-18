@@ -74,7 +74,9 @@ bash tools/dist_test.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.p
 
 ## Acknowlegement
 [MMDetection](https://github.com/aim-uofa/AdelaiDet)
+
 [DINO](https://github.com/IDEA-Research/DINO)
+
 [VSR](https://github.com/hikopensource/DAVAR-Lab-OCR)
 
 ## Citation

@@ -37,10 +37,12 @@ Dataset converting code and dataset samples will be released soon.
 conda create -n m2doc python=3.8 -y
 conda activate m2doc
 conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 cudatoolkit=10.2 -c pytorch
-pip install transformers
 git clone https://github.com/johnning2333/M2Doc.git
 cd M2Doc/mmdetection
 pip install -v -e .
+pip install transformers
+pip install mmengine
+mim install mmcv
 ```
 
 <!-- ```
@@ -60,13 +62,13 @@ datasets
 2. Train
 ```
 # for multi-gpu training
-bash tools/dist_train.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py 8
+bash mmdetection/tools/dist_train.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py 8
 ```
 
 3. Inference
 ```
 # for multi-gpu inference
-bash tools/dist_test.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py work_dirs/dino-4scale_w_m2doc_r50_8xb2-12e_doclaynet/epoch_12.pth 8
+bash mmdetection/tools/dist_test.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py work_dirs/dino-4scale_w_m2doc_r50_8xb2-12e_doclaynet/epoch_12.pth 8
 ```
 <!-- ## Example results:
 

@@ -60,7 +60,7 @@ from .yolof import YOLOF
 from .yolox import YOLOX
 
 from .dino_w_m2doc import DINO_w_M2Doc
-
+from .mask_rcnn_w_m2doc import MaskRCNN_w_M2Doc, StandardRoIHeadWithLateFusion, CascadeRoIHeadWithLateFusion, Shared2FCBBoxHeadWithLateFusion, Shared4Conv1FCBBoxHeadWithLateFusion
 
 __all__ = [
     'ATSS', 'BaseDetector', 'SingleStageDetector', 'TwoStageDetector', 'RPN',
@@ -75,5 +75,7 @@ __all__ = [
     'RTMDet', 'Detectron2Wrapper', 'CrowdDet', 'CondInst', 'BoxInst',
     'DetectionTransformer', 'ConditionalDETR', 'DINO', 'DABDETR', 'GLIP',
     'DDQDETR', 'GroundingDINO',
-    'DINO_w_M2Doc'
+    'DINO_w_M2Doc', 'MaskRCNN_w_M2Doc',
+    'StandardRoIHeadWithLateFusion', 'CascadeRoIHeadWithLateFusion', 'Shared2FCBBoxHeadWithLateFusion', 'Shared4Conv1FCBBoxHeadWithLateFusion'
+
 ]

@@ -8,10 +8,10 @@ The paper is available at [this link](https://ojs.aaai.org/index.php/AAAI/articl
 
 ## 🚧 TODO List
 - [x] Add training script and inference script for DINO_M2Doc.
-- [ ] Add training script and inference script for other detectors.
+- [x] Add training script and inference script for other detectors.
 - [ ] Add the data format samples for M2Doc.
 - [ ] Add the dataset converting scripts.
-- [ ] Release the Model-Zoo of M2Doc on DocLayNet.
+- [x] Release the Model-Zoo of M2Doc on DocLayNet.
 
 ## Installation
 - Python=3.8.0
@@ -73,6 +73,15 @@ bash mmdetection/tools/dist_test.sh mmdetection/m2doc_config/dino-4scale_w_m2doc
 <!-- ## Example results:
 
 <img src="demo/results.png" width="100%"> -->
+## Models
+The download links of pre-trained M2Doc weights on DocLayNet are provided in the following table.
+
+| Name | mAP | BaiduNetDisk | GoogleDrive|
+| -  | - |  -   |   -   |
+| Cascade Mask R-CNN R50 12epoch | 84.6 | [link](https://pan.baidu.com/s/1zklrZmAxkCXrfU004LMjPw?pwd=3xuw) | [link](https://drive.google.com/file/d/14cf3cmVMWTG8g6w0qMd_lkKYfyR0EDX-/view?usp=sharing) | 
+| Cascade Mask R-CNN R50 36epoch | 85.9 | [link](https://pan.baidu.com/s/172BYo3VnNF3qnWBF_rmL5g?pwd=pkit) | [link](https://drive.google.com/file/d/1VB7077QEsPYOczrPP7Q5OVmZs941wdHI/view?usp=sharing) | 
+| DINO R50 12epoch | 89.3 | [link](https://pan.baidu.com/s/1Ehm6P_6eB6r8_Es3CxEQhg?pwd=jv8f) | [link](https://drive.google.com/file/d/11ZwmLLqz-SaehUIsuZg5incXOTgqeIwF/view?usp=sharing) |
+| DINO R101 36epoch | 89.5 | [link](https://pan.baidu.com/s/192gxyNtVSJf5ZnXV_9mUvQ?pwd=cpfe) | [link](https://drive.google.com/file/d/1X8N1TYB1vsQ1O1skvbq9JDCP0Kk2LBkx/view?usp=sharing) | 
 
 ## Acknowlegement
 [MMDetection](https://github.com/aim-uofa/AdelaiDet)

@@ -45,27 +45,14 @@ pip install mmengine
 mim install mmcv
 ```
 
-<!-- ```
-datasets
-|_ totaltext
-|  |_ train_images
-|  |_ test_images
-|  |_ totaltext_train.json
-|  |_ weak_voc_new.txt
-|  |_ weak_voc_pair_list.txt
-|_ mlt2017
-|  |_ train_images
-|  |_ annotations/icdar_2017_mlt.json
-.......
-``` -->
 
-2. Train
+1. Train
 ```
 # for multi-gpu training
 bash mmdetection/tools/dist_train.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py 8
 ```
 
-3. Inference
+1. Inference
 ```
 # for multi-gpu inference
 bash mmdetection/tools/dist_test.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py work_dirs/dino-4scale_w_m2doc_r50_8xb2-12e_doclaynet/epoch_12.pth 8

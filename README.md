@@ -64,7 +64,7 @@ bash mmdetection/tools/dist_test.sh mmdetection/m2doc_config/dino-4scale_w_m2doc
 The download links of pre-trained M2Doc weights on DocLayNet are provided in the following table.
 
 | Name | Backbone | Epoch | mAP | BaiduNetDisk | GoogleDrive|
-| -  | - | - |  -   |   -   |
+| - | - | - | - |  -   |   -   |
 | Cascade Mask R-CNN | R50 | 12 | 84.6 | [link](https://pan.baidu.com/s/1zklrZmAxkCXrfU004LMjPw?pwd=3xuw) | [link](https://drive.google.com/file/d/14cf3cmVMWTG8g6w0qMd_lkKYfyR0EDX-/view?usp=sharing) | 
 | Cascade Mask R-CNN | R101 | 36 | 85.9 | [link](https://pan.baidu.com/s/172BYo3VnNF3qnWBF_rmL5g?pwd=pkit) | [link](https://drive.google.com/file/d/1VB7077QEsPYOczrPP7Q5OVmZs941wdHI/view?usp=sharing) | 
 | DINO | R50 | 12 | 89.3 | [link](https://pan.baidu.com/s/1Ehm6P_6eB6r8_Es3CxEQhg?pwd=jv8f) | [link](https://drive.google.com/file/d/11ZwmLLqz-SaehUIsuZg5incXOTgqeIwF/view?usp=sharing) |

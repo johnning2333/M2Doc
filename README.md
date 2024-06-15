@@ -26,9 +26,8 @@ The paper is available at [this link](https://ojs.aaai.org/index.php/AAAI/articl
 - [M6Doc](https://github.com/HCIILAB/M6Doc)<br>
 - [PubLayNet](https://github.com/ibm-aur-nlp/PubLayNet)
 2. Convert datasets OCR annotations.<br>
-Using [ocr_anno_convert.py](https://github.com/johnning2333/M2Doc/blob/main/data/doclaynet/ocr_anno_convert.py) to format and sort dataset OCR annotations.
-<br>
-Three test Samples can be found in [data/doclaynet/Annos](https://github.com/johnning2333/M2Doc/tree/main/data/doclaynet/Annos).
+Using [ocr_anno_convert.py](https://github.com/johnning2333/M2Doc/blob/main/data/doclaynet/ocr_anno_convert.py) to format and sort dataset OCR annotations.<br>
+Three test Samples can be found in [Annos](https://github.com/johnning2333/M2Doc/tree/main/data/doclaynet/Annos).
 
 ## Train and Inference Steps
 1. Install the repository (we recommend to use [Anaconda](https://www.anaconda.com/) for installation.)

@@ -174,10 +174,9 @@ train_dataloader = dict(
         type='DoclayNetDataset',
         metainfo=dict(classes=classes),
         ann_file=
-        'data/doc/doclaynet/COCO/train.json',
-        img_prefix = 'data/doc/doclaynet/core/vsr/',
-        ann_prefix = 'data/doc/doclaynet/core/vsr/Annos/',
-        data_prefix = dict(img='data/doc/doclaynet/core/PNG'),
+        'data/doclaynet/COCO/train.json',
+        ann_prefix = 'data/doclaynet/Annos/',
+        data_prefix = dict(img='data/doclaynet/PNG'),
         filter_cfg=dict(filter_empty_gt=False),
         pipeline=train_pipeline,
         ))
@@ -191,10 +190,9 @@ val_dataloader = dict(
         type='DoclayNetDataset',
         metainfo=dict(classes=classes),
         ann_file=
-        'data/doc/doclaynet/COCO/test.json',
-        img_prefix = 'data/doc/doclaynet/core/vsr/',
-        ann_prefix = 'data/doc/doclaynet/core/vsr/Annos/',
-        data_prefix = dict(img='data/doc/doclaynet/core/PNG'),
+        'data/doclaynet/COCO/test.json',
+        ann_prefix = 'data/doclaynet/Annos/',
+        data_prefix = dict(img='data/doclaynet/PNG'),
         filter_cfg=dict(filter_empty_gt=False),
         pipeline=test_pipeline,
         ))
@@ -208,10 +206,9 @@ test_dataloader = dict(
         type='DoclayNetDataset',
         metainfo=dict(classes=classes),
         ann_file=
-        'data/doc/doclaynet/core/COCO/test.json',
-        img_prefix = 'data/doc/doclaynet/core/vsr/',
-        ann_prefix = 'data/doc/doclaynet/core/vsr/Annos/',
-        data_prefix = dict(img='data/doc/doclaynet/core/PNG'),
+        'data/doclaynet/COCO/test.json',
+        ann_prefix = 'data/doclaynet/Annos/',
+        data_prefix = dict(img='data/doclaynet/PNG'),
         filter_cfg=dict(filter_empty_gt=False),
         pipeline=test_pipeline,
         ))
@@ -219,7 +216,7 @@ test_dataloader = dict(
 val_evaluator = dict(
     type='CocoMetric',
     ann_file=
-    'data/doc/doclaynet/core/COCO/test.json',
+    'data/doclaynet/COCO/test.json',
     metric=['bbox'],
     format_only=False,
     classwise=True,
@@ -227,7 +224,7 @@ val_evaluator = dict(
 test_evaluator = dict(
     type='CocoMetric',
     ann_file=
-    'data/doc/doclaynet/core/COCO/test.json',
+    'data/doclaynet/COCO/test.json',
     metric=['bbox'],
     format_only=False,
     classwise=True,

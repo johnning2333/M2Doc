@@ -9,8 +9,8 @@ The paper is available at [this link](https://ojs.aaai.org/index.php/AAAI/articl
 ## 🚧 TODO List
 - [x] Add training script and inference script for DINO_M2Doc.
 - [x] Add training script and inference script for other detectors.
-- [ ] Add the data format samples for M2Doc.
-- [ ] Add the dataset converting scripts.
+- [x] Add the data format samples for M2Doc.
+- [x] Add the dataset converting scripts.
 - [x] Release the Model-Zoo of M2Doc on DocLayNet.
 
 ## Installation
@@ -21,15 +21,14 @@ The paper is available at [this link](https://ojs.aaai.org/index.php/AAAI/articl
 <!-- - OpenCV for visualization -->
 
 ## Dataset Prepare
-Dataset downloading links: 
-
-- [DocLayNet](https://github.com/DS4SD/DocLayNet)
-
-- [M6Doc](https://github.com/HCIILAB/M6Doc)
-
+1. Download dataset you need, dataset downloading links: 
+- [DocLayNet](https://github.com/DS4SD/DocLayNet)<br>
+- [M6Doc](https://github.com/HCIILAB/M6Doc)<br>
 - [PubLayNet](https://github.com/ibm-aur-nlp/PubLayNet)
-
-Dataset converting code and dataset samples will be released soon.
+2. Convert datasets OCR annotations.<br>
+Using [ocr_anno_convert.py](https://github.com/johnning2333/M2Doc/blob/main/data/doclaynet/ocr_anno_convert.py) to format and sort dataset OCR annotations.
+<br>
+Three test Samples can be found in [data/doclaynet/Annos](https://github.com/johnning2333/M2Doc/tree/main/data/doclaynet/Annos).
 
 ## Train and Inference Steps
 1. Install the repository (we recommend to use [Anaconda](https://www.anaconda.com/) for installation.)
@@ -45,14 +44,13 @@ pip install mmengine
 mim install mmcv
 ```
 
-
-1. Train
+2. Train
 ```
 # for multi-gpu training
 bash mmdetection/tools/dist_train.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py 8
 ```
 
-1. Inference
+3. Inference
 ```
 # for multi-gpu inference
 bash mmdetection/tools/dist_test.sh mmdetection/m2doc_config/dino-4scale_w_m2doc_doclaynet.py work_dirs/dino-4scale_w_m2doc_r50_8xb2-12e_doclaynet/epoch_12.pth 8
